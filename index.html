@@ -1,0 +1,184 @@
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Showroom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Target element to display the fetched content
+            const corsDemoDiv = document.getElementById("div1");
+    
+            // Fetch the CORS Demo file from another bucket
+            fetch("http://farzi-bucket-xyz.s3-website.eu-north-1.amazonaws.com/cors-demo.html")
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+                    return response.text(); // Parse the response as text
+                })
+                .then(data => {
+                    // Insert the fetched content into the div
+                    corsDemoDiv.innerHTML = data;
+                })
+                .catch(error => {
+                    // Handle any errors
+                    console.error("Error fetching the CORS demo file:", error);
+                    corsDemoDiv.innerHTML = `<p style="color:red;">Error loading content. Please try again later.</p>`;
+                });
+        });
+    </script>
+    
+<body>
+
+<header>
+    <h1>Welcome to BMW Showroom Manav Jain</h1>
+</header>
+<div id="div1">
+    <p>Loading CORS Demo content...</p>
+</div>
+<!-- <nav>
+    <a href="#">Home</a>
+    <a href="#models">Models</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav> -->
+<!-- 
+<nav>
+    <a href="#">Home</a>
+    <a href="#models">Models</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a href="cors-demo.html">CORS Demo</a> <!-- New link added 
+</nav>
+
+
+<div class="container">
+    <section id="models" class="showroom-section">
+        <div class="car-card">
+            <img src="bmw_4_series.avif" alt="BMW Series 4">
+            <h3>BMW Series 3</h3>
+            <p>Experience the elegance and performance of the BMW Series 3.</p>
+        </div>
+        <div class="car-card">
+            <img src="bmw_m5.jpeg" alt="BMW Series 5">
+            <h3>BMW Series 5</h3>
+            <p>Discover the luxury and power of the BMW Series 5.</p>
+        </div>
+        <div class="car-card">
+            <img src="bmw_x5.jpeg" alt="BMW X5">
+            <h3>BMW X5</h3>
+            <p>Embrace the adventure with the all-new BMW X5.</p>
+        </div>
+        <div class="car-card">
+            <img src="bmw_7_series.jpeg" alt="BMW Series 7">
+            <h3>BMW Series 7</h3>
+            <p>Luxury redefined with the BMW Series 7.</p>
+        </div>
+        <div class="car-card">
+            <img src="bmw_x3.jpeg" alt="BMW X3">
+            <h3>BMW X3</h3>
+            <p>Compact SUV with the heart of a sports car - BMW X3.</p>
+        </div>
+        <div class="car-card">
+            <img src="bmw_z4.jpeg" alt="BMW Z4">
+            <h3>BMW Z4</h3>
+            <p>Open-top luxury with the BMW Z4.</p>
+        </div>
+        <div class="car-card">
+            <img src="bmw_m4.jpeg" alt="BMW M4">
+            <h3>BMW M4</h3>
+            <p>High-performance elegance - the BMW M4.</p>
+        </div>
+        <div class="car-card">
+            <img src="bmw_i8.jpeg" alt="BMW i8">
+            <h3>BMW i8</h3>
+            <p>Innovation meets performance in the BMW i8.</p>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2025 BMW Showroom. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Showroom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Welcome to BMW Showroom Manav Jain</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="#models">Models</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a href="http://farzi-bucket-xyz.s3-website.eu-north-1.amazonaws.com/cors-demo.html">CORS Demo</a> <!-- This link redirects to cors-demo.html -->
+</nav>
+
+<div class="container">
+    <section id="models" class="showroom-section">
+        <div class="car-card">
+            <img src="bmw_4_series.avif" alt="BMW Series 4">
+            <h3>BMW Series 3</h3>
+            <p>Experience the elegance and performance of the BMW Series 3.</p>
+        </div>
+        <div class="car-card">
+            <img src="bmw_m5.jpeg" alt="BMW Series 5">
+            <h3>BMW Series 5</h3>
+            <p>Discover the luxury and power of the BMW Series 5.</p>
+        </div>
+        <div class="car-card">
+            <img src="bmw_x5.jpeg" alt="BMW X5">
+            <h3>BMW X5</h3>
+            <p>Embrace the adventure with the all-new BMW X5.</p>
+        </div>
+        <div class="car-card">
+            <img src="bmw_7_series.jpeg" alt="BMW Series 7">
+            <h3>BMW Series 7</h3>
+            <p>Luxury redefined with the BMW Series 7.</p>
+        </div>
+        <div class="car-card">
+            <img src="bmw_x3.jpeg" alt="BMW X3">
+            <h3>BMW X3</h3>
+            <p>Compact SUV with the heart of a sports car - BMW X3.</p>
+        </div>
+        <div class="car-card">
+            <img src="bmw_z4.jpeg" alt="BMW Z4">
+            <h3>BMW Z4</h3>
+            <p>Open-top luxury with the BMW Z4.</p>
+        </div>
+        <div class="car-card">
+            <img src="bmw_m4.jpeg" alt="BMW M4">
+            <h3>BMW M4</h3>
+            <p>High-performance elegance - the BMW M4.</p>
+        </div>
+        <div class="car-card">
+            <img src="bmw_i8.jpeg" alt="BMW i8">
+            <h3>BMW i8</h3>
+            <p>Innovation meets performance in the BMW i8.</p>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2025 BMW Showroom. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
